@@ -4,7 +4,7 @@ import createActions from './createActions';
 import { list, elem, error} from './serviceReducer';
 import serviceActions from './actions';
 
-export default {
+export {
   serviceActions,
   HTTP,
   sagaService,

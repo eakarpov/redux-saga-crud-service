@@ -2,7 +2,7 @@
   "name": "redux-saga-crud-service",
   "description": "Generating crud methods for service using saga middleware",
   "keywords": ["redux", "saga", "crud", "feathers", "react", "service"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
     "lodash": "^4.17.4",
     "redux-saga": "^0.16.0"

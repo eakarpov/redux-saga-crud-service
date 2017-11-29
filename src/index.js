@@ -1,8 +1,8 @@
-import HTTP from './src/HTTP';
-import sagaService from './src/sagaService';
-import createActions from './src/createActions';
-import { list, elem, error} from './src/serviceReducer';
-import serviceActions from './src/actions';
+import HTTP from './HTTP';
+import sagaService from './sagaService';
+import createActions from './createActions';
+import { list, elem, error} from './serviceReducer';
+import serviceActions from './actions';
 
 export default {
   serviceActions,

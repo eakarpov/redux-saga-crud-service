@@ -2,13 +2,42 @@
   "name": "redux-saga-crud-service",
   "version": "0.0.1",
   "dependencies": {
-
+    "lodash": "^4.17.4",
+    "redux-saga": "^0.16.0"
   },
   "devDependencies": {
-
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.12.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "eslintConfig": {
+    "extends": "airbnb",
+    "plugins": [
+      "import"
+    ],
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "func-names": 0,
+      "no-underscore-dangle": 0,
+      "no-return-assign": 0
+    }
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "ignore": "/node_modules"
   },
   "scripts": {
-    "test": "",
-    "build": ""
+    "test": "eslint ./src/**/*.js",
+    "fix": "eslint ./src/**/*.js --fix",
+    "build": "babel ./src -d ./build"
   }
 }

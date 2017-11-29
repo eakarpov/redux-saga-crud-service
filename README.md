@@ -48,7 +48,7 @@ import { list, elem, error } from 'redux-saga-crud-service';
 
 list('yourServiceName', Actions),
 elem('yourServiceName', Actions),
-error: error(['yourServiceName'], Actions),
+error(['yourServiceName'], Actions),
 ```
 error reducer is the single one to the whole root reducer.
 

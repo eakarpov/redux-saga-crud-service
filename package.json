@@ -1,0 +1,14 @@
+{
+  "name": "redux-saga-crud-service",
+  "version": "0.0.1",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+
+  },
+  "scripts": {
+    "test": "",
+    "build": ""
+  }
+}

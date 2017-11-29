@@ -20,7 +20,7 @@ npm i --save redux-saga-crud-service
 
 If you want to configure a location of the service you work with, call a HTTP function in your index.js file
 
-```
+```javascript
 import { HTTP } from 'redux-saga-crud-service';
 
 HTTP({
@@ -33,7 +33,7 @@ To connect your application to the service, you should connect it by the redux-s
 
 1. In your root saga for each service you want to connect, call a function:
 
-```
+```javascript
 import { all } from 'redux-saga/effects';
 import { sagaService } from 'redux-saga-crud-service';
 
@@ -50,15 +50,17 @@ where Actions is your Action creator object.
 
 2. In your root reducer create any of the following reducers for every service you are connecting to:
 
-```
+```javascript
 import { combineReducers } from 'redux';
 import Actions from '/path/to/Actions';
 import { list, elem, error } from 'redux-saga-crud-service';
 
 export default combineReducers({
+  ...
   yourReducerName1: list('yourServiceName', Actions),
   yourReducerName2: elem('yourServiceName', Actions),
   yourReducerName3: error(['yourServiceName'], Actions),
+  ...
 });
 ```
 error reducer is the single one to the whole root reducer.
@@ -70,21 +72,23 @@ Reducer names pattern: let your service is called: "todos".
 
 3. Add to your action creator object a block describing actions of your service:
 
-```
+```javascript
 import { createActions, serviceActions } from 'redux-saga-crud-service';
 
 export default {
+  ...
   yourServiceName: createActions({
     prefix: 'yourServicePrefix',
     types: [...serviceActions],
   }),
+  ...
 }
 ```
 ## Using
 
 Now you can simply call actions to manage data from your backend service:
 
-```
+```javascript
 ...
 // somewhere in the class
 this.props.getTodos();

@@ -1,10 +1,27 @@
 {
   "name": "redux-saga-crud-service",
+  "description": "Generating crud methods for service using saga middleware",
+  "keywords": ["redux", "saga", "crud", "feathers", "react", "service"],
   "version": "0.1.0",
   "dependencies": {
     "lodash": "^4.17.4",
     "redux-saga": "^0.16.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eakarpov/redux-saga-crud-service.git"
+  },
+  "bugs": {
+    "email": "eakarpov@yandex.ru"
+  },
+  "author": {
+    "name": "George Carpow",
+    "email": "eakarpov@yandex.ru"
+  },
+  "contributors": [
+
+  ],
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
